@@ -1,181 +1,262 @@
 <!DOCTYPE html>
 <html lang="">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="article.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans"
+      rel="stylesheet"
+    />
     <title>Taipei på budget</title>
-</head>
+    <script
+      src="https://kit.fontawesome.com/6c7b5cd90a.js"
+      crossorigin="anonymous"
+    ></script>
 
-<body>
+  </head>
+
+  <body>
     <header>
-        <div class="bignav">
-            <div id="logo">
-                <a href="#home">Rejseguide på budget</a>
-            </div>
-
-            <nav class="fullnav">
-                <ul>
-                    <li>
-                        <a href="index.html">Forside</a>
-                    </li>
-                    <li> <a href="article1.html">Hong Kong</a></li>
-                    <li> <a href="article2.html">Singapore</a></li>
-                    <li> <a href="article3.html" class="active">Taipei</a></li>
-                </ul>
-            </nav>
-
-        </div>
-        <div class="topnav">
-            <a href="#home" class="active">Rejseguide på budget</a>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
+        <div class="bignav-show">
+            <div class="bignav">
+              <div id="logo">
+                <a href="#home"><i class="fas fa-route"></i></a>
+              </div>
+  
+          <nav class="fullnav">
+            <ul>
+              <li>
                 <a href="index.html">Forside</a>
-                <a href="article1.html">Hong Kong</a>
-                <a href="article2.html">Singapore</a>
-                <a href="article3.html">Taipei</a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+              </li>
+              <li><a href="article1.html" >Hong Kong</a></li>
+              <li><a href="article2.html">Singapore</a></li>
+              <li><a href="article3.html" class="active">Taipei</a></li>
+            </ul>
+          </nav>
         </div>
+    </div>
+        <div class="topnav">
+          <a href="#home" class="active"
+            ><i class="fas fa-route"></i></i
+          ></a>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <a href="index.html">Forside</a>
+            <a href="article1.html">Hong Kong</a>
+            <a href="article2.html">Singapore</a>
+            <a href="article3.html">Taipei</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+  
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          Tilbage til toppen
+        </button>
+      </header>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Tilbage til toppen</button>
-    </header>
+    <main class="guide">
+      <section>
+        <article>
+          <h1>Taipei på budget</h1>
+          <figure id="banner">
+            <img src="img/TW_Front.jpg" alt="Billede af Taiwan" />
+          </figure>
+        </article>
 
+        <article>
+          <h2>Generel info inden rejsen</h2>
+          <h3>Hvornår er det bedst at rejse til Taipei?</h3>
 
-    <main>
-        <section>
-            <article>
-                <h1>Taipei på budget</h1>
-                <figure id="banner"><img src="img/TW_Front.jpg" alt="Billede af Taiwan"></figure>
+          <p>
+            Taipei ligger i det nordlige Taiwan. Der er subtropisk vejr med en
+            gennemsnitstemperatur på 22 grader Celsius. Så du vil ikke virkelig
+            opleve fire forskellige årstider her. Den bedste sæson at besøge
+            Taipei er i løbet af efteråret november til det tidlige forår i
+            april på grund af mindre nedbør. Typhoon sæson i Taipei slutter
+            omkring oktober. Du skal måske undgå at rejse her i maj til august.
+          </p>
 
-            </article>
+          <p>
+            Du skal måske også undgå det kinesiske nytår, der falder omtrent i
+            slutningen af januar til begyndelsen af februar. Dette er højsæson,
+            så priserne på hoteller er dyrere, for ikke at nævne de fleste
+            restauranter og butikker er lukket på grund af ferien.
+          </p>
 
-            <article>
-                <h2>Generel info inden rejsen</h2>
-                <h3>Hvornår er det bedst at rejse til Taipei?</h3>
+          <h3>Vigtigt at huske!</h3>
+          <ul>
+            <li>
+              Der bruges New Taipei Dollar, og 5 NTD svarer ca. til 1 kr.
+              Betaling med kreditkort er almindeligt brugt i Taipei. De fleste
+              pengeautomater accepterer udenlandske kort. Dog er det en god ide
+              at tage kontanter når man spiser ud.
+            </li>
 
-                <p>Taipei ligger i det nordlige Taiwan. Der er subtropisk vejr med en gennemsnitstemperatur på 22 grader Celsius. Så du vil ikke virkelig opleve fire forskellige årstider her. Den bedste sæson at besøge Taipei er i løbet af efteråret november til det tidlige forår i april på grund af mindre nedbør. Typhoon sæson i Taipei slutter omkring oktober. Du skal måske undgå at rejse her i maj til august.</p>
+            <li>
+              Sproget i Taipei er Kantonesisk (ikke Mandarin!). Der er folk der
+              kan kan snakke og forstå engelsk men være stadigvæk klar til at
+              bruge Google translate.
+            </li>
 
-                <p>Du skal måske også undgå det kinesiske nytår, der falder omtrent i slutningen af januar til begyndelsen af februar. Dette er højsæson, så priserne på hoteller er dyrere, for ikke at nævne de fleste restauranter og butikker er lukket på grund af ferien.</p>
+            <li>
+              Der bruges ikke en EU stik, så husk at købe en rejseadapter som
+              ses på billedet. Strømen er 220 volts/50Hz.
 
+              <figure>
+                <img
+                  src="img/TW_Plug.jpg"
+                  alt="Taiwan adapter"
+                  class="smallImg"
+                />
+              </figure>
+            </li>
 
-                <h3>Vigtigt at huske!</h3>
-                <ul>
-                    <li>Der bruges New Taipei Dollar, og 5 NTD svarer ca. til 1 kr. Betaling med kreditkort er almindeligt brugt i Taipei. De fleste pengeautomater accepterer udenlandske kort. Dog er det en god ide at tage kontanter når man spiser ud.
-                    </li>
+            <li>Tidszonen er +8 timer GMT</li>
 
-                    <li>Sproget i Taipei er Kantonesisk (ikke Mandarin!). Der er folk der kan kan snakke og forstå engelsk men være stadigvæk klar til at bruge Google translate.
-                    </li>
+            <li>
+              Det er almindeligt at give et drikkepenge til bellhops i finere,
+              vestlige stil hoteller. Men i restauranter i er drikkepenge ikke
+              nødvendigt, og hvis restauranten opkræver eventuelle drikkepenge,
+              tilføjes de automatisk til din regning.
+            </li>
+          </ul>
+        </article>
 
-                    <li>
-                        Der bruges ikke en EU stik, så husk at købe en rejseadapter som ses på billedet. Strømen er 220 volts/50Hz.
+        <article>
+          <h2>Flybilletter</h2>
+          <p>
+            Der er mange steder man kan sammenligne priser på flybilletter,
+            såsom <a href="https://www.momondo.dk/">Momondo</a>. Der er ikke et
+            specifikt tidspunkt at købe billetter men som regel er det en god
+            ide at købe par måneder før rejsen og på en mandag eller tirsdag
+            (Bare ikke weekenden!) Du kan også overvåge priser indtil du finder
+            en pris der er overkommelig, men du skal ikke vente indtil den
+            sidste dag!
+          </p>
+        </article>
 
-                        <figure><img src="img/TW_Plug.jpg" alt="Taiwan adapter" class="smallImg"></figure>
-                    </li>
+        <article>
+          <h2>Ophold</h2>
+          <h3>Hostels</h3>
+          <p>
+            Et hostel er det billigste valg når man snakker ophold. Man kan
+            enten vælge deleværelser hvor man sover med andre, eller man kan
+            også finde hostels der har private værelser. Dog skal man være klar
+            på at dele badeværelset med andre. Hvis man gerne vil have
+            privathed, så skal du booke et hotelværelse, men det bliver dyrere.
+          </p>
+          <p>
+            Man kan bestille hostelværelser på
+            <a href="https://www.hostelworld.com/">Hostelworld</a>.
+          </p>
+        </article>
 
-                    <li>Tidszonen er +8 timer GMT</li>
+        <article>
+          <h2>Transport fra lufthavnen til byen</h2>
 
-                    <li>
-                        Det er almindeligt at give et drikkepenge til bellhops i finere, vestlige stil hoteller. Men i restauranter i er drikkepenge ikke nødvendigt, og hvis restauranten opkræver eventuelle drikkepenge, tilføjes de automatisk til din regning.</li>
+          <h3>MRT</h3>
+          <p>
+            Den hurtigste måde at komme til Taipei, New Taipei City og Taoyuan
+            fra Taiwan Lufthavn (Taoyuan International Airport) er med tog -
+            Taiwan Airport MRT. Den hurtige transit har Express og Commuter tog.
+            Taiwan MRT Airport billetpris er 35 kr. for Express Train.
+            Driftstiden er fra 6:00 til 11:00.
+          </p>
 
-                </ul>
-            </article>
+          <h3>Offentlige busser</h3>
+          <p>
+            Man kan også tage bussen til byen. Billeten koster 27 kr.
+          </p>
+        </article>
 
-            <article>
-                <h2>Flybilletter</h2>
-                <p>Der er mange steder man kan sammenligne priser på flybilletter, såsom <a href="https://www.momondo.dk/">Momondo</a>. Der er ikke et specifikt
-                    tidspunkt at købe billetter men som regel er det en god ide at købe par måneder før rejsen og på en mandag eller tirsdag (Bare ikke weekenden!) Du kan også overvåge priser indtil du finder en pris der er overkommelig, men du skal ikke vente indtil den sidste dag!</p>
-            </article>
+        <article>
+          <h2>Hvordan kommer man rundt?</h2>
 
-            <article>
-                <h2>Ophold</h2>
-                <h3>Hostels</h3>
-                <p>Et hostel er det billigste valg når man snakker ophold. Man kan enten vælge deleværelser hvor man sover med andre, eller man kan også finde hostels der har private værelser. Dog skal man være klar på at dele badeværelset med andre. Hvis man gerne vil have privathed, så skal du booke et hotelværelse, men det bliver dyrere.
-                </p>
-                <p>
-                    Man kan bestille hostelværelser på <a href="https://www.hostelworld.com/">Hostelworld</a>.</p>
-            </article>
+          <h3>Hop On/Hop Off Bus</h3>
 
-            <article>
-                <h2>Transport fra lufthavnen til byen</h2>
+          <h3>MRT</h3>
+          <p>
+            Toget eller MRT er det bedste måde man kan komme rundt i Taipei. Man
+            kan købe Easy Card, Happy Card, ICash og Ipass efter egne behov.
+            <a
+              href="https://guidetotaipei.com/article/easycard-%E6%82%A0%E9%81%8A%E5%8D%A1"
+            >
+              Læs mere her</a
+            >
+          </p>
+        </article>
 
-                <h3>MRT</h3>
-                <p>
-                    Den hurtigste måde at komme til Taipei, New Taipei City og Taoyuan fra Taiwan Lufthavn (Taoyuan International Airport) er med tog - Taiwan Airport MRT. Den hurtige transit har Express og Commuter tog. Taiwan MRT Airport billetpris er 35 kr. for Express Train. Driftstiden er fra 6:00 til 11:00.
-                </p>
+        <article>
+          <h2>Seværdigheder</h2>
 
-                <h3>Offentlige busser</h3>
-                <p>
-                    Man kan også tage bussen til byen. Billeten koster 27 kr.
-                </p>
-            </article>
+          <p>CHIANG KAI-SHEK MEMORIAL HALL</p>
+          <figure>
+            <img src="img/TW_CH.jpg" alt="CHIANG KAI-SHEK MEMORIAL HALL" />
+          </figure>
 
-            <article>
-                <h2>Hvordan kommer man rundt?</h2>
+          <p>SUN-YAT SEN MEMORIAL HALL</p>
+          <figure>
+            <img src="img/TW_SY.jpg" alt="SUN-YAT SEN MEMORIAL HALL" />
+          </figure>
 
-                <h3>Hop On/Hop Off Bus</h3>
+          <p>TAIPEI 101</p>
+          <figure><img src="img/TW_101.jpg" alt="TAIPEI 101" /></figure>
+        </article>
 
-                <h3>MRT</h3>
-                <p>Toget eller MRT er det bedste måde man kan komme rundt i Taipei. Man kan købe Easy Card, Happy Card, ICash og Ipass efter egne behov. <a href="https://guidetotaipei.com/article/easycard-%E6%82%A0%E9%81%8A%E5%8D%A1"> Læs mere her</a></p>
-            </article>
+        <article>
+          <h2>Mad og drikke</h2>
+          <p>Ay-Chung Flour Rice Noodles</p>
+          <figure>
+            <img
+              src="img/TW_Food1.jpg"
+              alt="Ay-Chung Flour Rice Noodles"
+              class="smallImg"
+            />
+          </figure>
+          <p>Jin Feng Lu Rou Fan</p>
+          <figure>
+            <img
+              src="img/TW_Food2.jpg"
+              alt="Jin Feng Lu Rou Fan"
+              class="smallImg"
+            />
+          </figure>
+          <p>Shao Shao Ke</p>
+          <figure>
+            <img src="img/TW_Food3.jpg" alt="Shao Shao Ke" class="smallImg" />
+          </figure>
+        </article>
 
-            <article>
-                <h2>Seværdigheder</h2>
+        <article>
+          <h2>Tips</h2>
+          <ul>
+            <li>
+              Få et turistkort på Taipei Main Station. Du kan bede om MRT-kort
+              på nogen MRT-stationer. Du kan også blot tage et billede af kortet
+              på MRT-stationerne. Ellers skal du downloade Taipei Metro App på
+              Google Play.
+            </li>
 
-                <p>CHIANG KAI-SHEK MEMORIAL HALL</p>
-                <figure><img src="img/TW_CH.jpg" alt="CHIANG KAI-SHEK MEMORIAL HALL"></figure>
+            <li>
+              De mere berømte natmarkeder sælger dyrere mad, du kan købe din mad
+              på hawkerboder eller spisesteder, der drysses rundt om byen, hvis
+              du vil spare.
+            </li>
 
-
-                <p>SUN-YAT SEN MEMORIAL HALL</p>
-                <figure><img src="img/TW_SY.jpg" alt="SUN-YAT SEN MEMORIAL HALL"></figure>
-
-
-                <p>TAIPEI 101</p>
-                <figure><img src="img/TW_101.jpg" alt="TAIPEI 101"></figure>
-            </article>
-
-            <article>
-                <h2>Mad og drikke</h2>
-                <p>Ay-Chung Flour Rice Noodles</p>
-                <figure><img src="img/TW_Food1.jpg" alt="Ay-Chung Flour Rice Noodles" class="smallImg"></figure>
-                <p>Jin Feng Lu Rou Fan</p>
-                <figure><img src="img/TW_Food2.jpg" alt="Jin Feng Lu Rou Fan" class="smallImg"></figure>
-                <p>Shao Shao Ke</p>
-                <figure><img src="img/TW_Food3.jpg" alt="Shao Shao Ke" class="smallImg"></figure>
-            </article>
-
-            <article>
-                <h2>Tips</h2>
-                <ul>
-                    <li>
-
-                        Få et turistkort på Taipei Main Station. Du kan bede om MRT-kort på nogen MRT-stationer. Du kan også blot tage et billede af kortet på MRT-stationerne. Ellers skal du downloade Taipei Metro App på Google Play.</li>
-
-
-                    <li>
-
-                        De mere berømte natmarkeder sælger dyrere mad, du kan købe din mad på hawkerboder eller spisesteder, der drysses rundt om byen, hvis du vil spare.</li>
-
-
-
-                    <li>
-                        There are vending machines at the airport for drinks, buy their instead of buying at airport restaurants, you will save a lot!</li>
-
-
-                </ul>
-
-            </article>
-
-
-        </section>
+            <li>
+              There are vending machines at the airport for drinks, buy their
+              instead of buying at airport restaurants, you will save a lot!
+            </li>
+          </ul>
+        </article>
+      </section>
     </main>
 
     <footer></footer>
     <script src="main.js"></script>
-</body></html>
+  </body>
+</html>

@@ -1,129 +1,272 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
-    background-color: #FFFAFA;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #fffafa;
+  margin: 0 auto;
 }
 
 span {
-    font-weight: bold;
-}
-
-/* -----------------fullscreen---------------------------- */
-
-
-body {
-    width: 75%;
-    margin: 0 auto;
-}
-
-.bignav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    background-color: darkslategrey;
-}
-
-#logo {}
-
-#logo a {
-    text-decoration: none;
-    color: white;
-    font-size: 2em;
-}
-
-
-
-figure {
-    position: relative;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
-figcaption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: bold;
-    font-size: 2.5rem;
-    background-color: black;
-}
-
-article {
-    margin-bottom: 2em;
-}
-
-img {
-    width: 100%;
-    margin: 0 auto;
-    height: 50vh;
-    filter: contrast(75%);
-    filter: blur(0.6px);
-}
-
-h2 {
-    text-align: center;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-}
-
-
-
-/*-----------------------Top------------------------------*/
-#myBtn {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 20px;
-    /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: red;
-    /* Set a background color */
-    color: white;
-    /* Text color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 15px;
-    /* Some padding */
-    border-radius: 10px;
-    /* Rounded corners */
-    font-size: 18px;
-    /* Increase font size */
-}
-
-#myBtn:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
+  font-weight: bold;
 }
 
 /* -----------------mobile---------------------------- */
 
+.bignav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkslategrey;
+  padding: 1em 2em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999;
+}
 
-@media only screen and (max-width: 768px) {
-    body {
-        width: 100%;
-        padding: 2em;
-    }
+.bignav-show {
+  display: none;
+}
 
-    figure {
-        width: 100%;
-        padding: 1em;
-    }
+#logo {
+}
 
+#logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+
+.fullnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fullnav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fullnav ul {
+  display: flex;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.fullnav ul {
+  display: flex;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.fullnav ul li {
+  list-style: none;
+  margin-left: 1vw;
+}
+
+.fullnav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.fullnav .active {
+  text-decoration: underline;
+}
+
+.fullnav a:hover {
+  color: #109eb5;
+}
+
+/* -----------------Burger---------------------------- */
+
+/* Style the navigation menu */
+.topnav {
+  background-color: darkslategrey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  border-bottom: solid 1px;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: darkslategrey;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: darkslategrey;
+  color: white;
+}
+
+/*-----------------------Top------------------------------*/
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: red;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
+
+/*-----------------------Styling------------------------------*/
+figure {
+  position: relative;
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.home img {
+  height: 30vh;
+  filter: brightness(50%);
+  border: solid black;
+}
+
+.home article {
+  margin-bottom: 3em;
+}
+
+h1,
+h2 {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.home {
+  margin: 5em 0;
+}
+
+.guide {
+  margin: 2.5em 0;
+}
+
+.guide {
+  padding: 1em;
+}
+
+.guide #banner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.guide #banner img {
+  width: 100%;
+}
+
+.guide figure {
+  width: 50%;
+}
+
+.guide h3,
+.guide p,
+.guide li,
+.guide figure {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.guide li {
+  list-style: none;
+}
+
+.guide figure {
+  width: 100%;
+}
+
+.guide .smallImg {
+  width: 50%;
+}
+
+/* -----------------laptop---------------------------- */
+
+@media (min-width: 1024px) {
+  body {
+    width: 50%;
+    padding: 2em;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .bignav-show {
+    display: block;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    width: 40%;
+  }
 }
